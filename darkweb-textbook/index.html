@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>ダークウェブの教科書</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="my-5">ダークウェブの教科書</h1>
+
+      <h2>目次</h2>
+
+      <pre>◆第1章：ダークウェブとは何か
+
+　■ダークウェブとは
+　　●ダークウェブを支える「Tor」
+　　●基軸通貨となる仮想通貨「Bitcoin」
+　　●ダークウェブの「闇市場」と、そこで売られているもの
+　　●違法薬物市場を動かすダークウェブ
+　　●ダークウェブと法執行機関
+　　●ダークウェブと闇市場を狙うハッカーたち
+　　●ダークウェブでは犯罪者すら獲物
+　　　・闇市場利用者への脅迫状
+　　　・闇市場での出口詐欺
+　　●ダークウェブで人は殺せるのか
+
+　■Torについて
+　　●Torの仕組み
+　　●秘匿サービスについて
+　　●なぜTorを使うのか
+　　●データで見るTor
+　　　○Torの利用者数の推移
+　　　○Torのノード数の推移
+　　　○Torの通信速度は遅いのか？
+
+　■ダークウェブと文化
+　　●都市伝説
+　　　・Blank Room Soup
+　　　・ミステリーボックス
+　　●ゲーム
+　　　・Sad Satan
+　　　・Welcome to the Game
+　　●アニメ・映画
+　　　・アンフレンデッド：ダークウェブ
+　　　・ディープ・ウェブ
+　　●その他
+　　　・DeepWebUnderground
+
+◆第2章：Torの環境構築
+
+　■Torブラウザのインストール
+　　●Windows/macOS/Linux
+　　●iOS
+　　●Android
+　　　○アプリの使用方法
+
+　■Tor本体のみのインストール
+　　●Windows
+　　●macOS
+　　●Linux
+　　　○CentOS/Fedora
+　　　○Debian/Ubuntu
+
+　■Torブラウザ以外のソフトウェア
+　　●Tails
+　　　○Tailsのインストール方法
+　　　　1：ダウンロード
+　　　　2：インストール（Windows）
+　　　　2：インストール（macOS）
+　　　　2：インストール（Linux）
+　　　　2：インストール（Linux・上級者向け）
+　　　　3：起動する
+　　　　4：永続ストレージの作成
+　　　○トラブルシューティング
+
+　　●Whonix
+　　　○Whonixのインストール方法
+　　　　1：仮想マシンイメージのダウンロード
+　　　　2：Whonixイメージの検証
+　　　　3：VirtualBoxにインポート
+　　　　4：Whonixを起動
+　　　　5：ゲートウェイの設定
+
+　　●その他のソフトウェア
+　　　○Qubes OS
+
+　■Torをカスタマイズする
+　　●接続先のノードを変更する
+　　●ブリッジを設定する
+
+◆第3章：Torの入門編
+
+　■基本的なTorブラウザの操作
+　　●Torブラウザを使ってみる
+　　●Torを使ってネット上で匿名でいるために
+　　●TorブラウザとFirefoxアドオン
+
+　■TorとVPNとプロキシ
+　　●匿名VPNサービスとの兼用
+　　　○TorとVPNの併用のメリットとデメリット
+　　　○匿名VPNサービス
+　　　○VPNと併用する方法
+　　●多重プロキシ
+
+　■TorとBitcoin
+　　●Bitcoinを入手する
+　　　○匿名でBitcoinを入手する
+　　●BitcoinとTorを併用する
+　　　○ウォレットソフト「Electrum」を使う
+　　●Bitcoinのミキシングサービス
+　　　○終了したミキシングサービス
+　　●トランザクションを秘匿する暗号通貨
+　　　○MoneroとTorを併用する
+　　　○BitcoinとMoneroを交換する
+
+
+◆第4章：Torの高度な利用方法
+
+　■Torをプログラムで使う
+
+　■TorのIPアドレスをサーバーでブロックする
+
+　■Torリレーに参加する
+　　●TorのノードをIPv6に対応させる
+
+　■秘匿サービスを構築する
+　　●秘匿サービスで独自のOnionドメインを使用する
+　　　○新しいバージョンの秘匿サービスで独自のOnionドメインを使用する
+
+　■Torの匿名性を破る
+　　●ユーザーのIPアドレスを特定する
+　　　○過去にあった脆弱性
+　　●秘匿サービスの匿名性を破る
+　　　○リモートアクセスが可能かを調べる
+　　　○ウェブアプリケーションの脆弱性を突く
+　　　○OSINTで情報収集を行う
+　　●マルウェアを使ってTorユーザーの匿名化を破る
+　　　1：匿名化を破るマルウェアを作成する
+　　　2：ターゲットにファイルを開かせる
+　　　3：ログを確認する
+
+　■Tor/VPNに対応したWi-Fiルーターを自作する
+
+◆第5章：ダークウェブの資料編
+
+　■ダークウェブに存在するサイト
+　　●検索エンジン
+　　●闇市場（ブラックマーケット）
+　　●フォーラム・コミュニティサイト
+　　●児童ポルノサイト
+　　●メールサービス
+　　●言語別のサイト
+　　　○日本語
+　　　○ロシア語
+　　●その他
+
+　■ダークウェブの情報源
+　　●Reddit
+　　●Hidden Wiki
+
+　■ダークウェブの歴史
+　　・（2002）Torが公開される
+　　・（2004）日本初のダークウェブ上のサイト「Onionちゃんねる」が開設
+　　・（2007/9）研究者がTorを利用して大使館などの政府機関の通信傍受に成功
+　　・（2010/10）警視庁公安部の情報流出事件でTorが使用される
+　　・（2011/10）ハッカー集団アノニマスがダークウェブの児童ポルノサイトに攻撃
+　　・（2012）パソコン遠隔操作事件の影響でTorの存在が知れ渡る
+　　・（2013/4）警察庁がサイト管理者に向けTorのブロックを提案
+　　・（2013/8）FBIが違法サイトで溢れていたダークウェブのホスティングサービスを摘発
+　　・（2013/8）2ちゃんねるの有料サービス会員の個人情報が流出
+　　・（2013/10）米FBIが世界最大の闇市場「Silk Road」を摘発
+　　・（2014/11）米FBIが「Operation Onymous」で「Silk Road 2.0」など400以上の違法サイトを摘発
+　　・（2015/2）ダークウェブ史上最悪の児童虐待犯が逮捕
+　　・（2015/4）匿名メールサービス「SIGAINT」へ70の罠ノードが攻撃
+　　・（2015/7）不倫サイト「アシュレイ・マディソン」の顧客情報がダークウェブ上に流出
+　　・（2015/9）日本のダークウェブ児童ポルノサイト「まじかる☆おにおん」の利用者7人を摘発
+　　・（2016/11）Firefoxの脆弱性が発見され、Torブラウザへの攻撃が発生
+　　・（2017/7）二大闇市場「AlphaBay」「Hansa」が摘発、容疑者は自殺
+　　・（2017/8）謎の犯罪者集団「ブラックデスグループ」の誘拐事件
+　　・（2017/10）オーストラリア警察が児童ポルノサイトの摘発後に運営を続けていたことが発覚
+　　・（2018/2）コインチェックから盗難されたNEMがダークウェブで販売される
+　　・（2018/6）ダークウェブで日本語の児童ポルノサイトを運営していた男を逮捕
+　　・（2018/8）ダークウェブで相手を募集し息子に児童売春をさせていたドイツ人の男女に禁錮刑
+　　・（2018/8）世界初、イスラム系武装組織の「ジハード（聖戦）」支援サイトがダークウェブに登場
+　　・（2018/10）Bitcoin目当てに猫27匹を殺害してダークウェブに載せた女を逮捕
+　　・（2018/10）少女で人肉食を試すため相手をダークウェブで募集した男を逮捕
+　　・（2018/11）ダークウェブのホスティングサービスがハッキングを受け、6000サイト以上が消滅
+　　・（2019/2）32サイトから流出した計8.3億件のアカウント情報が闇市場で販売中
+　　・（2019/5）大手闇市場サイト「Wall Street Market」を当局が摘発
+　　・（2019/5）ダークウェブのニュースサイト「DeepDotWeb」の運営者が逮捕
+　　・（2019/5）世界各国の警察がダークウェブの児童ポルノサイトを解体、子ども50人救出
+　　・（2019/6）仮想通貨ミキシングサービスが次々に摘発や自主閉鎖</pre>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//blog.cheena.net/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  </body>
+</html>
