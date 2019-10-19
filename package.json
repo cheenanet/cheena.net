@@ -1,0 +1,38 @@
+{
+  "name": "cheena.net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules",
+    "watch": "npm run watch:js & npm run watch:css",
+    "watch:js": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules",
+    "watch:css": "node-sass --watch src/app.scss dist/app.css",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules && node-sass src/app.scss dist/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheenanet/cheena.net.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheenanet/cheena.net/issues"
+  },
+  "homepage": "https://github.com/cheenanet/cheena.net#readme",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "cross-env": "^6.0.3",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0",
+    "popper.js": "^1.16.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "typed.js": "^2.0.11"
+  }
+}
