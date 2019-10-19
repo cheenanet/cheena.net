@@ -11,7 +11,7 @@
     "watch:js": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules",
     "watch:css": "node-sass --watch src/app.scss dist/app.css",
     "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules && node-sass --output-style compressed src/app.scss dist/app.css"
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules && node-sass --output-style compressed src/app.scss public/app.css"
   },
   "repository": {
     "type": "git",
