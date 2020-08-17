@@ -2,6 +2,25 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+@mixin animation($value) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  animation: $value;
+}
+
+@mixin grayscale($value) {
+  -webkit-filter: grayscale($value);
+  filter: grayscale($value);
+}
+
+@mixin transition($value) {
+  transition: $value;
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -ms-transition: $value;
+  -o-transition: $value;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -54,9 +73,7 @@ body {
 }
 .typed-cursor {
   opacity: 1;
-  -webkit-animation: blink 1s infinite;
-  -moz-animation: blink 1s infinite;
-  animation: blink 1s infinite;
+  @include animation(blink 1s infinite);
 }
 @keyframes blink {
   0% {
@@ -120,27 +137,16 @@ body {
   width: 120px;
   height: 120px;
   margin-bottom: 1.5rem;
-  -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%); 
-  transition: ease-in-out all 0.2s;
-  -webkit-transition: ease-in-out all 0.2x;
-  -ms-transition: ease-in-out all 0.2s;
-  -o-transition: ease-in-out all 0.2s;
+  @include grayscale(100%);
+  @include transition(ease-in-out all 0.2s);
 }
 .social img:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
+  @include grayscale(0%);
 }
 
 .projects h3 {
   margin-top: 0.5rem;
 }
-/*
-.projects img {
-  width: 120px;
-  height: 120px;
-}
-*/
 
 .footer {
   padding-top: 1.5rem;
