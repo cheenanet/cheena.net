@@ -24,13 +24,13 @@
   },
   "homepage": "https://github.com/cheenanet/cheena.net#readme",
   "devDependencies": {
-    "bootstrap": "^4.5.0",
-    "cross-env": "^7.0.2",
+    "bootstrap": "^4.5.3",
+    "cross-env": "^7.0.3",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
-    "sass-loader": "^9.0.2",
-    "webpack": "^4.44.1",
+    "sass-loader": "^9.0.3",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
