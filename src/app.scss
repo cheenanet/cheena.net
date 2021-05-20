@@ -1,4 +1,4 @@
-@import "node_modules/bootstrap/scss/bootstrap";
+@import 'node_modules/bootstrap/scss/bootstrap';
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
@@ -39,7 +39,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .brand {
@@ -57,7 +57,7 @@ body {
   color: #b2b2b2;
   font-size: 2rem;
   text-transform: uppercase;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 .typed-string {
   display: inline;
@@ -149,5 +149,5 @@ body {
 .footer {
   padding-top: 1.5rem;
   color: #777;
-  border-top: .05rem solid #e5e5e5;
+  border-top: 0.05rem solid #e5e5e5;
 }

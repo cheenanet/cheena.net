@@ -8,5 +8,5 @@ new Typed('.typed-string', {
   typeSpeed: 20,
   startDelay: 1000,
   backDelay: 2000,
-  loop: true
+  loop: true,
 })
