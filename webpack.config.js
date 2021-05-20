@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const env = process.env.NODE_ENV
 
@@ -14,9 +15,25 @@ module.exports = {
       {
         test: /\.(scss)$/,
         use: [
+          {
+            // inject CSS to page
+            loader: 'style-loader'
+          }, {
+            // translates CSS into CommonJS modules
+            loader: 'css-loader',
+            options: {
+              url: false
+            }
+          },
           'sass-loader' // compiles Sass to CSS
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      hash: true
+    })
+  ]
 }

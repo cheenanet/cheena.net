@@ -7,11 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress",
-    "watch": "npm run watch:js & npm run watch:css",
-    "watch:js": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress",
-    "watch:css": "node-sass --watch src/app.scss dist/app.css",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress",
     "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress && node-sass --output-style compressed src/app.scss public/app.css"
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress"
   },
   "repository": {
     "type": "git",
@@ -26,8 +24,11 @@
   "devDependencies": {
     "bootstrap": "^5.0.1",
     "cross-env": "^7.0.3",
+    "css-loader": "^5.2.5",
+    "html-webpack-plugin": "^5.3.1",
     "node-sass": "^6.0.0",
     "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0"
   },

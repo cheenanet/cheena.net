@@ -1,6 +1,7 @@
-import 'bootstrap'
-import '@popperjs/core'
+// import 'bootstrap'
+// import '@popperjs/core'
 import Typed from 'typed.js'
+import './app.scss'
 
 new Typed('.typed-string', {
   stringsElement: '#typed-strings',
