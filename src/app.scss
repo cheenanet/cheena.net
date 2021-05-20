@@ -134,8 +134,6 @@ body {
   margin-bottom: 1.5rem;
 }
 .social img {
-  width: 120px;
-  height: 120px;
   margin-bottom: 1.5rem;
   @include grayscale(100%);
   @include transition(ease-in-out all 0.2s);

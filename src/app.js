@@ -1,10 +1,6 @@
-import $ from 'jquery'
-import 'popper.js'
 import 'bootstrap'
+import '@popperjs/core'
 import Typed from 'typed.js'
-
-window.jQuery = $
-window.$ = $
 
 new Typed('.typed-string', {
   stringsElement: '#typed-strings',
