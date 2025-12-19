@@ -12,22 +12,22 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.(scss)$/,
-        use: [
-          {
-            // inject CSS to page
-            loader: 'style-loader'
-          }, {
+        {
+          test: /\.(scss)$/,
+          use: [
+            // inject CSS into the page
+            { loader: 'style-loader' },
             // translates CSS into CommonJS modules
-            loader: 'css-loader',
-            options: {
-              url: false
-            }
-          },
-          'sass-loader' // compiles Sass to CSS
-        ]
-      }
+            {
+              loader: 'css-loader',
+              options: { url: false }
+            },
+            // process Tailwind CSS and autoprefixer
+            { loader: 'postcss-loader' },
+            // compiles Sass to CSS (keeps custom SCSS)
+            'sass-loader'
+          ]
+        }
     ]
   },
   plugins: [

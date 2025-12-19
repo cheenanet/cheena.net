@@ -1,5 +1,3 @@
-// import 'bootstrap'
-// import '@popperjs/core'
 import Typed from 'typed.js'
 import './app.scss'
 
