@@ -131,17 +131,13 @@ body {
 .social .col-md-4 {
   margin-bottom: 1.5rem;
 }
-.social img {
+.social img, .social svg {
   margin-bottom: 1.5rem;
   @include grayscale(100%);
   @include transition(ease-in-out all 0.2s);
 }
-.social img:hover {
+.social img:hover, .social svg:hover {
   @include grayscale(0%);
-}
-
-.projects h3 {
-  margin-top: 0.5rem;
 }
 
 .footer {
